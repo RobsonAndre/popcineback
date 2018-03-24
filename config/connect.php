@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 	class Conn {
 		
 		//conexao com o banco de dados
@@ -18,13 +18,4 @@
 			return mysql_close($conn);
 		}
 	}
-
-	/* Uso * /
-	$Conn =  new Conn;
-	$c = $Conn->connect(HOST,USER,PASS,DB);
-	$s = "SELECT indice FROM ".DB.".".PFIX."etiqueta";
-	$r = mysql_query($s) or die(mysql_error());
-	echo $l = mysql_num_rows($r);
-	$Conn->desconnect($c);
-	/**/
 ?>

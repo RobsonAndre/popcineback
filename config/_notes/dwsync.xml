@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="server.php" server="ftp.papiroweb.com.br//" local="131663034617843011" remote="131663034600000000" Dst="1" />
-<file name="connect.php" server="ftp.papiroweb.com.br//" local="131663012571308900" remote="131663013000000000" Dst="1" />
-<file name="define.php" server="ftp.papiroweb.com.br//" local="131663082800528990" remote="131663083200000000" Dst="1" />
-<file name="query.php" server="ftp.papiroweb.com.br//" local="131663023159383252" remote="131663023200000000" Dst="1" />
-<file name="token.php" server="ftp.papiroweb.com.br//" local="131663114081683577" remote="131663114400000000" Dst="1" />
-<file name="status.php" server="ftp.papiroweb.com.br//" local="131663290357457009" remote="131663290800000000" Dst="1" />
-<file name="headers.php" server="ftp.papiroweb.com.br//" local="131663297342908807" remote="131663297400000000" Dst="1" />
+<file name="connect.php" server="ftp.papiroweb.com.br//" local="131663878360858194" remote="131663878800000000" Dst="1" />
+<file name="query.php" server="ftp.papiroweb.com.br//" local="131663880227329461" remote="131663880600000000" Dst="1" />
+<file name="token.php" server="ftp.papiroweb.com.br//" local="131663893178217110" remote="131663893200000000" Dst="1" />
+<file name="headers.php" server="ftp.papiroweb.com.br//" local="131663872590584114" remote="131663872800000000" Dst="1" />
+<file name="mensagens.php" server="ftp.papiroweb.com.br//" local="131663947987033571" remote="131663948400000000" Dst="1" />
+<file name="defines.php" server="ftp.papiroweb.com.br//" local="131663876790673695" remote="131663877000000000" Dst="1" />
+<file name="vars.php" server="ftp.papiroweb.com.br//" local="131663881467541945" remote="131663881800000000" Dst="1" />
 </dwsync>
