@@ -20,15 +20,15 @@
 	
 	/**
 	 *	social
-	 *		Interger
+	 *		String
 	 *	Descr
 	 *		tipo de rede social a qual o usuario usou para login		
 	 *	Opcao
-	 *		1 - FaceBook
+	 *		facebook
 	 *	
 	 */
 	
-	$social  =  ($_GET['social']==1)?'facebook':'null';
+	$social  =  $_GET['social']?$_GET['social']:'null';
 	
 	/**
 	 *	fid
@@ -60,19 +60,20 @@
 	$r = $Qry->query($s);
 	$l   = $Qry->rows($r);
 	if($l){
-		$output[] = $status[901];	
+		$output = $status[901];	
 	}else{
 		$s = "INSERT INTO papiroweb.popcine_etiqueta ( uid, social, fid, etiqueta, time ) VALUES ( '$uid', '$social', '$fid', '$etiqueta', '$time' )";
 		if($r = $Qry->query($s)){
-			$output[] = $status[902];
+			//$output = $status[902];
+			$output = "{'success': true}"; 
 		}else{
-			$output[] = $status[903];
+			$output = $status[903];
 		}
 	}
 	$Conn->desconnect($c);
 	
 	/** /
-	$output[] = array(
+	$output = array(
 			 		"token"		=> $token,
 					"uid"		=> $uid,
 					"social"	=> $social,
