@@ -39,4 +39,12 @@
 	 *		rotulo ou etiqueta que deve ser inserido no banco de dados associado ao fid
 	 */
 	/*echo '<br />'.*/ $etiqueta  = $_GET['etiqueta'];
+	
+	/**
+	 *	nota
+	 *		nota atribuida por um usuario
+	 */
+	/*echo '<br />'.*/ $nota    = $_GET['nota'];
+	
+	
 ?>
