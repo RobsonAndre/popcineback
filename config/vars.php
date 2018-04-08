@@ -45,6 +45,10 @@
 	 *		nota atribuida por um usuario
 	 */
 	/*echo '<br />'.*/ $nota    = $_GET['nota'];
-	
-	
+
+	/**
+	 *	tipo
+	 *		nota atribuida por um usuario
+	 */
+	/*echo '<br />'.*/ $tipo    = $_GET['tipo']?$_GET['tipo']:'politica';
 ?>

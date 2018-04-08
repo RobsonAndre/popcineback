@@ -29,5 +29,7 @@
 	//EndPoint - Recomendo
 	$msg[919] = array('status_code'=>919,'status_message'=>'Sucesso: filme marcado como recomendo.','success'=>true);
 	$msg[920] = array('status_code'=>920,'status_message'=>'Erro: filme não marcado como recomendo.','success'=>false);
+	//EndPoint - documento
+	$msg[921] = array('status_code'=>921,'status_message'=>'Sucesso: documento.','success'=>true);
 	
 ?>
