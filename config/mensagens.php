@@ -31,5 +31,11 @@
 	$msg[920] = array('status_code'=>920,'status_message'=>'Erro: filme não marcado como recomendo.','success'=>false);
 	//EndPoint - documento
 	$msg[921] = array('status_code'=>921,'status_message'=>'Sucesso: documento.','success'=>true);
+	//EndPoint - comentario
+	$msg[922] = array('status_code'=>922,'status_message'=>'Erro: Usuário já comentou este filme.','success'=>false);
+	$msg[923] = array('status_code'=>923,'status_message'=>'Sucesso: Comentário inserido.','success'=>true);
+	$msg[924] = array('status_code'=>924,'status_message'=>'Sucesso: Impossivel inserir o comentário.','success'=>false);
+	$msg[925] = array('status_code'=>925,'status_message'=>'Sucesso: Linhas contadas.','success'=>true);
+	$msg[926] = array('status_code'=>926,'status_message'=>'Sucesso: Linhas selecionadas.','success'=>true);
 	
 ?>
