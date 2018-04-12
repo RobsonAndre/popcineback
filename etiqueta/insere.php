@@ -6,7 +6,7 @@
 	$c = $Conn->connect(HOST,USER,PASS,DB);
 	$s = "SELECT indice FROM papiroweb.".PFIX."etiqueta WHERE uid='$uid' AND social='$social' AND fid='$fid' AND etiqueta='$etiqueta'";
 	$r = $Qry->query($s);
-	$l   = $Qry->rows($r);
+	$l = $Qry->rows($r);
 	if($l){
 		$output = $msg[901];	
 	}else{
