@@ -171,13 +171,18 @@
 	 * 	tamanho: 2 Bytes
 	 *	min: 1
 	 *	max: 5
+	 * 	definido: 5
 	 */
-	/*echo '<br />'.*/ $nota = $_GET['nota'];
+	/*echo '<br />'.*/ $nota = $_GET['nota']?$nota = $_GET['nota']:5;
 
 	/**
 	 *	tipo
-	 *		nota atribuida por um usuario
+	 *		define o tipo de cada acao:
+	 * 			para acao termo duas opcoes: 
+	 *				termo ou politica
+	 *			para acao 
 	 * 	tipo: string
+	 * 	
 	 */
 	/*echo '<br />'.*/ $tipo = $_GET['tipo'] ? $_GET['tipo'] : 'politica';
 	
@@ -187,7 +192,7 @@
 	 *	tipo: string
 	 *	tamanho: 256 caracteres
 	 */
-	/*echo '<br />'.*/ $comentario = addslashes($_GET['comentario']);
+	/*echo '<br />'.*/ $comentario = addslashes(trim($_GET['comentario']));
 
 	/**
 	 *	cid
@@ -195,6 +200,15 @@
 	 *	tipo: integer
 	 *	tamanho: 11 Bytes 
 	 */
-	/*echo '<br />'.*/ $cid = $_GET['cid'];
+	/*echo '<br />'.*/ $cid = $_GET['cid']?$_GET['cid']:0;
+
+	/**
+	 *	spoiler
+	 *		indica se o comentario tem ou não spolier
+	 *	tipo: integer
+	 *	tamanho: 1 Bytes
+	 *	predefinida: 0 (false-nao)|1 (verdade-sim) 
+	 */
+	/*echo '<br />'.*/ $spoiler = $_GET['spoiler'] ? $_GET['spoiler'] : 0;
 	
 ?>

@@ -37,5 +37,6 @@
 	$msg[924] = array('status_code'=>924,'status_message'=>'Sucesso: Impossivel inserir o comentário.','success'=>false);
 	$msg[925] = array('status_code'=>925,'status_message'=>'Sucesso: Linhas contadas.','success'=>true);
 	$msg[926] = array('status_code'=>926,'status_message'=>'Sucesso: Linhas selecionadas.','success'=>true);
+	$msg[927] = array('status_code'=>927,'status_message'=>'Erro: Comentario muito curto','success'=>false);
 	
 ?>
