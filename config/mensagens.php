@@ -38,5 +38,10 @@
 	$msg[925] = array('status_code'=>925,'status_message'=>'Sucesso: Linhas contadas.','success'=>true);
 	$msg[926] = array('status_code'=>926,'status_message'=>'Sucesso: Linhas selecionadas.','success'=>true);
 	$msg[927] = array('status_code'=>927,'status_message'=>'Erro: Comentario muito curto','success'=>false);
+	$msg[928] = array('status_code'=>928,'status_message'=>'Erro: Nao foi possivel grava a avaliacao','success'=>false);
+	$msg[929] = array('status_code'=>929,'status_message'=>'Sucesso: Avaliacao atualizada com sucesso','success'=>true);
+	$msg[930] = array('status_code'=>930,'status_message'=>'Sucesso: Avaliacao registrada com sucesso','success'=>true);
+	$msg[931] = array('status_code'=>931,'status_message'=>'Sucesso: Nota selecionada com sucesso','success'=>true,'nota'=>0);
+	$msg[932] = array('status_code'=>932,'status_message'=>'Sucesso: Avaliacao não encontrada','success'=>true,'nota'=>0);
 	
 ?>

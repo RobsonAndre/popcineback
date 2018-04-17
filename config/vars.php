@@ -171,9 +171,9 @@
 	 * 	tamanho: 2 Bytes
 	 *	min: 1
 	 *	max: 5
-	 * 	definido: 5
+	 * 	definido: 0
 	 */
-	/*echo '<br />'.*/ $nota = $_GET['nota']?$nota = $_GET['nota']:5;
+	/*echo '<br />'.*/ $nota = $_GET['nota']?$nota = $_GET['nota']:0;
 
 	/**
 	 *	tipo

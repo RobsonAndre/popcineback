@@ -23,6 +23,10 @@
 		include("./linhas.php");
 	}elseif($action==5){
 		include("./listar.php");
+	}elseif($action==6){
+		include("./avaliar.php");
+	}elseif($action==7){
+		include("./pegarAvaliacao.php");
 	}else{
 		$output = $msg[904];
 	}

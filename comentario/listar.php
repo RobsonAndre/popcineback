@@ -34,7 +34,7 @@
 		$res[$i]['social'] 	   = $arr[$i]['social'];
 		$res[$i]['cid'] 	   = $arr[$i]['cid'];
 		$res[$i]['comentario'] = utf8_encode($arr[$i]['comentario']);
-		$res[$i]['data']       = date('d-m-Y H-i-s',$arr[$i]['time']);
+		$res[$i]['data']       = date('d-m-Y H:i:s',$arr[$i]['time']);
 		$res[$i]['spoiler']    = $arr[$i]['spoiler'];
 		//verificando as respostas
 		$rcid = $res[$i]['id'];
