@@ -28,7 +28,7 @@
 	$msg[926]['linhas'] = $l;
 	$arr = $Qry->arr($r);
 	for($i=0;$i<count($arr);$i++){
-		$res[$i]['id'] 	   	   = $arr[$i]['indice'];
+		$cid = $res[$i]['id']  = $arr[$i]['indice'];
 		$res[$i]['fid'] 	   = $arr[$i]['fid'];
 		$res[$i]['uid'] 	   = $arr[$i]['uid'];
 		$res[$i]['social'] 	   = $arr[$i]['social'];
@@ -36,13 +36,34 @@
 		$res[$i]['comentario'] = utf8_encode($arr[$i]['comentario']);
 		$res[$i]['data']       = date('d-m-Y H:i:s',$arr[$i]['time']);
 		$res[$i]['spoiler']    = $arr[$i]['spoiler'];
+		
+		//verificando as avaliacoes positivas
+		$s = "SELECT indice FROM papiroweb.".PFIX."comentario_avaliacao WHERE fid='$fid' AND cid = '$cid' AND nota = 1 ";
+		$r = $Qry->query($s);
+		$l = $Qry->rows($r);
+		$pos = $l ? $l : 0;
+		$res[$i]['sql'] = $s;
+		
+		//verificando as avaliacoes negativas
+		$s = "SELECT indice FROM papiroweb.".PFIX."comentario_avaliacao WHERE fid='$fid' AND cid = '$cid' AND nota = -1 ";
+		$r = $Qry->query($s);
+		$l = $Qry->rows($r);
+		$neg = $l ? $l : 0;
+		
+		//verificando as avaliacoes totais
+		$tot = $pos + $neg;
+		$res[$i]['avaliacao']['total']     = $tot;
+		$res[$i]['avaliacao']['resultado'] = $pos-$neg;
+		$res[$i]['avaliacao']['positiva']  = $tot ? $pos/($pos+$neg) : $tot;
+		$res[$i]['avaliacao']['negativa']  = $tot ? $neg/($pos+$neg) : $tot;
+		
 		//verificando as respostas
 		$rcid = $res[$i]['id'];
 		$s = "SELECT indice FROM papiroweb.".PFIX."comentario WHERE fid='$fid' AND cid = '$rcid' ";
 		$r = $Qry->query($s);
 		$l = $Qry->rows($r);
 		$res[$i]['resposta']  = $l;
-		//$res[$i]['sql']  	  = $s;
+		
 		//verificando o usuario que respondeu
 		$uid = $res[$i]['uid'];
 		$social = $res[$i]['social'];

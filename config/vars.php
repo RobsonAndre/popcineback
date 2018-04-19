@@ -1,4 +1,9 @@
 <?php
+	/**
+	 *	time
+	 *	data e hora no formato timestamp
+	 */
+	$time = time();
 	
 	/**
 	 *	Action

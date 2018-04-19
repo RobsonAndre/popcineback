@@ -27,6 +27,8 @@
 		include("./avaliar.php");
 	}elseif($action==7){
 		include("./pegarAvaliacao.php");
+	}elseif($action==8){
+		include("./registrarLeitura.php");
 	}else{
 		$output = $msg[904];
 	}

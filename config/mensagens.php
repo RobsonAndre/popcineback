@@ -43,5 +43,6 @@
 	$msg[930] = array('status_code'=>930,'status_message'=>'Sucesso: Avaliacao registrada com sucesso','success'=>true);
 	$msg[931] = array('status_code'=>931,'status_message'=>'Sucesso: Nota selecionada com sucesso','success'=>true,'nota'=>0);
 	$msg[932] = array('status_code'=>932,'status_message'=>'Sucesso: Avaliacao não encontrada','success'=>true,'nota'=>0);
-	
+	$msg[933] = array('status_code'=>933,'status_message'=>'Sucesso: Leitura registrada com sucesso','success'=>true);
+	$msg[934] = array('status_code'=>934,'status_message'=>'Erro: Nao foi possivel o registro da leitura','success'=>false);	
 ?>

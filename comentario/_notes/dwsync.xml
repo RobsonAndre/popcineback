@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="index.php" server="ftp.papiroweb.com.br//" local="131684783485929506" remote="131684784600000000" Dst="1" />
+<file name="index.php" server="ftp.papiroweb.com.br//" local="131685586550233873" remote="131685587400000000" Dst="1" />
 <file name="insere.php" server="ftp.papiroweb.com.br//" local="131682178002102277" remote="131682178800000000" Dst="1" />
-<file name="listar.php" server="ftp.papiroweb.com.br//" local="131683947629807195" remote="131683948200000000" Dst="1" />
+<file name="listar.php" server="ftp.papiroweb.com.br//" local="131685659886829916" remote="131685660600000000" Dst="1" />
 <file name="linhas.php" server="ftp.papiroweb.com.br//" local="131677885800000000" remote="131677885800000000" Dst="1" />
 <file name="avaliar.php" server="ftp.papiroweb.com.br//" local="131684768460110456" remote="131684769000000000" Dst="1" />
 <file name="pegarAvaliacao.php" server="ftp.papiroweb.com.br//" local="131684788113094145" remote="131684788800000000" Dst="1" />
+<file name="registrarLeitura.php" server="ftp.papiroweb.com.br//" local="131685585643289339" remote="131685586200000000" Dst="1" />
 </dwsync>
