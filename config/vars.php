@@ -215,5 +215,13 @@
 	 *	predefinida: 0 (false-nao)|1 (verdade-sim) 
 	 */
 	/*echo '<br />'.*/ $spoiler = $_GET['spoiler'] ? $_GET['spoiler'] : 0;
+
+	/**
+	 *	denuncia
+	 *		palavras chaves separadas por virgula
+	 *	tipo: string
+	 *	tamanho: 64 Bytes
+	 */
+	/*echo '<br />'.*/ $denuncia = $_GET['denuncia'] ? $_GET['denuncia'] : "";
 	
 ?>

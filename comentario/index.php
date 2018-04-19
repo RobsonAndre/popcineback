@@ -29,6 +29,8 @@
 		include("./pegarAvaliacao.php");
 	}elseif($action==8){
 		include("./registrarLeitura.php");
+	}elseif($action==9){
+		include("./denunciar.php");
 	}else{
 		$output = $msg[904];
 	}
